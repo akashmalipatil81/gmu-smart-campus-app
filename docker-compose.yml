@@ -1,0 +1,15 @@
+services:
+  postgres:
+    image: postgres:16
+    container_name: gmu-campus-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: gmu_smart_campus
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - gmu_postgres_data:/var/lib/postgresql/data
+volumes:
+  gmu_postgres_data:

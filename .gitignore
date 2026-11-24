@@ -1,0 +1,11 @@
+**/node_modules/
+**/dist/
+**/.gradle/
+**/.idea/
+**/build/
+**/local.properties
+backend/target/
+backend/.tools/
+backend/data/
+.env
+*.log
